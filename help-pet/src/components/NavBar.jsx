@@ -1,17 +1,35 @@
+import logo from '../assets/logo.png'
+import styles from '../style/nav_bar.module.css'
+import {Link} from "react-router-dom";
+
+
 function NavBar () {
     return (
-        <div>
-            <header>
-                <div><img src="../assets/LogoH.png" alt="Logo HelpPet" /></div>
-
-                <div>
-                    <a href="">Home</a>
-                    <a href="">Sobre nós</a>
-                    <a href="">Serviços</a>
-                    <a href="">Login</a>
+        <nav className={styles.navBar_container}>
+                
+                <div className={styles.containerImg}>
+                    <img src={logo} alt="Logo HelpPet" /> 
+                    <p>HelpPet</p>
                 </div>
-            </header>
-        </div>
+
+               
+                <ul className={styles.containerList}>
+                    <li>
+                         <Link to="/">Home</Link>
+                     </li>
+                    <li>
+                        <Link to="/">Sobre nós</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Serviços</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Login</Link>
+                    </li>
+                </ul>
+                
+
+        </nav>
     )
 }
 

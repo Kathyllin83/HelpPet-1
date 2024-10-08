@@ -1,0 +1,29 @@
+img {
+    max-width: 110px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navBar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.containerList {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+
+}

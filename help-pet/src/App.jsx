@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import LinkButton from './components/LinkButton';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from './pages/homePage';
 import './App.css';
 
 function App() {
   return (
-    // <div className="App">
-    //   <LinkButton label={"LOGIN"}></LinkButton>
-    // </div>
-    <HomePage />
+    <Router>
+
+      <HomePage />
+      
+    </Router>
   );
 }
 
