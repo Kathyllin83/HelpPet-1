@@ -1,22 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from './pages/homePage';
-import Services from './pages/Services';
-import About from './pages/About';
-import Login from './pages/Login';
-
+import Home from './Components/Home/Home.jsx';
+import Login from './Components/Login/Login.jsx';
+import TemporaryHome from './Components/Services/TemporaryHome.jsx';
+import CadastroLar from './Components/Services/CadastroLar.jsx'; 
+import CadastroOng from './Components/Services/CadastroOng.jsx';
+import Listagem from './Components/Listagem/Listagem.jsx';
 import './App.css';
 
 function App() {
   return (
-    <Router>        
-      <Routes> 
-        <Route exact path="/" element={<HomePage/>} />
-        <Route exact path="/about" element={<About/>} />
-        <Route exact path="/services" element={<Services/>} />
-        <Route exact path="/login" element={<Login/>} />    
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/temporary-home" element={<TemporaryHome />} />
+        <Route path="/listagem" element={<Listagem />} /> {/* Nome corrigido */}
+        <Route path="/cadastrar-lar" element={<CadastroLar />} />
+        <Route path="/cadastrar-ong" element={<CadastroOng />} />
       </Routes>
     </Router>
   );
 }
-
 export default App;
