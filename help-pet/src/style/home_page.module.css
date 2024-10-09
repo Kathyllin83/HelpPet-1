@@ -1,7 +1,7 @@
 
 .bodyHome {
     height: 100vh;
-    background: url(../assets/PlanoDeFundo_Home.png) no-repeat;
+    background: url(../assets/PlanoDeFundo_Home3.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
    
 }
 
@@ -31,7 +31,7 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 30px;
-        color: rgb(79, 101, 94);
+        color: var(--primary-color);
     }
     
     & p {

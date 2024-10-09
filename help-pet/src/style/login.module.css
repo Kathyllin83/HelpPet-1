@@ -1,0 +1,28 @@
+.bodyLogin {
+    background-color: rgb(167, 193, 180);
+    height: 100vh;
+}
+
+.imgAnimals {
+    max-width: 200px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: 20px;
+}
+
+.cardFormLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-width: 600px;
+    height: 500px;
+    border-radius: 35px;
+}
