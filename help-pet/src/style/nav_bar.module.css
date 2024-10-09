@@ -49,6 +49,11 @@ img {
         font-weight: 700;
         
     }
+    & li a.active {
+        color: #246e48;
+        font-weight: 700;
+        border-bottom: 2px solid #246e48;
+    }
 }
 
 .line {
@@ -58,4 +63,44 @@ img {
     background-color: var(--second-color);
     margin: 0.5px 0;
     border-radius: 5px;
+}
+
+/* nav_bar.modules.css */
+
+/* Estilos existentes */
+
+.navBar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem 0rem 4rem;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .navBar_container {
+        padding: 0.5rem 3rem 0rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar_container {
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+
+    .containerList {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerImg p {
+        font-size: 20px;
+    }
+
+    .containerList li a {
+        font-size: 15px;
+    }
 }
